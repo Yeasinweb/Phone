@@ -1,8 +1,10 @@
 .logo{
     z-index: 5;
-    position: absolute;
+    overflow: visible;
     position: fixed;
-    display: block;
-    margin: auto;
 
+}
+
+.section1{
+    height: 100vh;
 }
