@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="tyslesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="./js-css/jquery.pagepiling.min.css"/>
+
+
+
+</head>
+  <body>
+
+<section class="area">
+  <div class="container-fluid">
+
+    
+    <div id="pagepiling">
+        <div class="section home-area" id="home">
+
+                <div class="logo">
+                    <nav class="navbar navbar-expand-lg bg-light m-0">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+
+                <div class="banner-area">
+                    <h2>RootNext</h2>
+                </div>
+
+
+            
+        </div>
+        <div class="section about-area" id="about">
+            <div class="wrapper">
+                <h2>RootNext</h2>
+            </div>
+        </div>
+        <div class="section portfolio-area" id="port">
+            <div class="banner-area">
+                <h2>RootNext</h2>
+            </div>
+        </div>
+        <div class="section services-araa" id="services">
+            <div class="banner-area">
+                <h2>RootNext</h2>
+            </div>
+        </div>
+        <div class="section contact-araa" id="contact">
+            <div class="banner-area">
+                <h2>RootNext</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+  </div>
+</section>
+ 
+
+
+   
+    <!-------load jquery library----->
+    
+    <!-------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----load plugin library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <!----load plugin library -->
+
+    <script src="./js-css/jquery.pagepiling.min.js"></script>
+
+    
+    <script>
+                $(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+	});
+});
+
+    </script>
+
+  
+</body>
+</html>
