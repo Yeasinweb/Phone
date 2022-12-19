@@ -1,0 +1,20 @@
+.logo{
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100wh;
+    margin: auto;
+
+
+}
+
+.section1{
+    height: 100vh;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background-color: aliceblue;
+}
